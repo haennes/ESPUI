@@ -1148,6 +1148,10 @@ void ESPUIClass::jsonReload()
     }
 }
 
+AsyncWebServer* ESPUIClass::getServer(){
+    return server;
+}
+
 void ESPUIClass::beginSPIFFS(const char* _title, const char* username, const char* password, uint16_t port)
 {
     // Backwards compatibility wrapper
