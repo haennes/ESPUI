@@ -192,7 +192,7 @@ public:
     void jsonReload();
     void jsonDom(uint16_t startidx, AsyncWebSocketClient* client = nullptr, bool Updating = false);
 
-    AsyncWebServer* ESPUIClass::getServer()
+    AsyncWebServer* getServer();
     
     Verbosity verbosity = Verbosity::Quiet;
     uint32_t  GetNextControlChangeId();
